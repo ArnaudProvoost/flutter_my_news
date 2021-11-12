@@ -1,10 +1,11 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {Status} from '../status';
+
 import {Router} from '@angular/router';
 import {Subscription} from 'rxjs';
-import {StatusService} from '../status.service';
-import {createOneCapitalLetterValidator} from '../one-capital-letter-validator';
+import { createOneCapitalLetterValidator } from 'src/app/shared/one-capital-letter-validator';
+import { StatusService } from '../status.service';
+
 
 @Component({
   selector: 'app-status-form',

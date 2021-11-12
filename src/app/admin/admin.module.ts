@@ -1,12 +1,20 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
+import {NgModule} from '@angular/core';
+import {SharedModule} from '../shared/shared.module';
+import {CategoryModule} from './category/category.module';
+import {StatusModule} from './status/status.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    SharedModule,
+    CategoryModule,
+    StatusModule
+  ],
+  exports: [
+    CategoryModule,
+    StatusModule
   ]
 })
-export class AdminModule { }
+export class AdminModule {
+}

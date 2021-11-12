@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Article } from '../article';
-import { ArticleService } from '../article.service';
+import { Article } from '../article/article';
+import { ArticleService } from '../article/article.service';
+
 
 @Component({
   selector: 'app-home',

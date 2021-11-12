@@ -1,12 +1,25 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
+import {NgModule} from '@angular/core';
+import {CategoryListComponent} from './category-list/category-list.component';
+import {CategoryFormComponent} from './category-form/category-form.component';
+import {SharedModule} from '../../shared/shared.module';
+import {CategoryService} from './category.service';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CategoryListComponent,
+    CategoryFormComponent
+  ],
   imports: [
-    CommonModule
+    SharedModule
+  ],
+  exports: [
+    CategoryListComponent,
+    CategoryFormComponent
+  ],
+  providers: [
+    CategoryService
   ]
 })
-export class CategoryModule { }
+export class CategoryModule {
+}

@@ -1,8 +1,9 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
-import { Category } from '../../../category';
-import { CategoryService } from '../../../category.service';
+
 import {Subscription} from 'rxjs';
+import { Category } from '../category';
+import { CategoryService } from '../category.service';
 
 @Component({
   selector: 'app-category-form',
